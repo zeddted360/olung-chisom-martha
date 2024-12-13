@@ -67,7 +67,7 @@ const Portfolio = () => {
                   className="flex items-center justify-center text-gray-600 underline hover:text-blue-600 transition-colors"
                 >
                   <Facebook className="w-5 h-5 mr-2" />
-                  <span>martha chisom</span>
+                  <span className="text-blue-600">martha chisom</span>
                 </Link>
               </div>
             </div>
