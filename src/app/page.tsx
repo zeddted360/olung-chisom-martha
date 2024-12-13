@@ -11,6 +11,7 @@ import {
   ClipboardList,
   MessageCircle,
   Star,
+  Facebook,
 } from "lucide-react";
 import {
   Card,
@@ -22,10 +23,9 @@ import {
 import Image from "next/image";
 import GetLocation from "@/components/GetLocation";
 import Contact from "@/components/ui/Contact";
+import Link from "next/link";
 
 const Portfolio = () => {
-
-
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* Hero Section - Enhanced mobile-first approach */}
@@ -62,6 +62,13 @@ const Portfolio = () => {
                   <Phone className="w-5 h-5 mr-2" />
                   <span>+234 902 553 6929</span>
                 </div>
+                <Link
+                  href="https://www.facebook.com/anabel.chisom.503"
+                  className="flex items-center justify-center text-gray-600 underline hover:text-blue-600 transition-colors"
+                >
+                  <Facebook className="w-5 h-5 mr-2" />
+                  <span>martha chisom</span>
+                </Link>
               </div>
             </div>
           </div>
@@ -219,7 +226,7 @@ const Portfolio = () => {
                   <br />
                   480101
                 </p>
-               <GetLocation/>
+                <GetLocation />
               </CardContent>
             </Card>
           </div>
@@ -231,7 +238,7 @@ const Portfolio = () => {
             <MessageCircle className="w-6 h-6 mr-2 text-blue-600" />
             Contact Me
           </h2>
-          <Contact/>
+          <Contact />
         </section>
       </main>
 
